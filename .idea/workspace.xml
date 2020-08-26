@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cdf33931-f8e6-48c6-bb06-6f7b56d52f46" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <executable path="C:\composer\composer.bat" />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="composer.json" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/rosell-dk/webp-convert" />
+      <path value="$PROJECT_DIR$/vendor/phpmailer/phpmailer" />
+      <path value="$PROJECT_DIR$/vendor/league/plates" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/matthiasmullie/path-converter" />
+      <path value="$PROJECT_DIR$/vendor/matthiasmullie/minify" />
+      <path value="$PROJECT_DIR$/vendor/coffeecode/optimizer" />
+      <path value="$PROJECT_DIR$/vendor/coffeecode/router" />
+      <path value="$PROJECT_DIR$/vendor/coffeecode/cropper" />
+      <path value="$PROJECT_DIR$/vendor/coffeecode/paginator" />
+      <path value="$PROJECT_DIR$/vendor/coffeecode/uploader" />
+      <path value="$PROJECT_DIR$/vendor/rosell-dk/image-mime-type-guesser" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1gB6GehJkHlJFYPBEtfz9mnXDvl" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cdf33931-f8e6-48c6-bb06-6f7b56d52f46" name="Default Changelist" comment="" />
+      <created>1597575565686</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597575565686</updated>
+      <workItem from="1597575574418" duration="2919000" />
+      <workItem from="1598293506034" duration="11482000" />
+      <workItem from="1598307665053" duration="641000" />
+      <workItem from="1598309936563" duration="110000" />
+      <workItem from="1598310992270" duration="947000" />
+      <workItem from="1598313513875" duration="4022000" />
+      <workItem from="1598386650355" duration="9980000" />
+      <workItem from="1598479016219" duration="625000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="215" y="45" width="1016" height="683" key="#Deployment" timestamp="1598301189693">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="215" y="45" width="1016" height="683" key="#Deployment/0.0.1366.768@0.0.1366.768" timestamp="1598301189693" />
+    <state x="105" y="0" key="#Options" timestamp="1598314011051">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="105" y="0" key="#Options/0.0.1366.768@0.0.1366.768" timestamp="1598314011051" />
+    <state x="338" y="281" key="ComposerInitDialogKey" timestamp="1598295534824">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="338" y="281" key="ComposerInitDialogKey/0.0.1366.768@0.0.1366.768" timestamp="1598295534824" />
+    <state x="401" y="63" key="FileChooserDialogImpl" timestamp="1598297898695">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="401" y="63" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1598297898695" />
+    <state x="89" y="0" key="SettingsEditor" timestamp="1598298155377">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="89" y="0" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1598298155377" />
+    <state x="298" y="51" width="787" height="700" key="find.popup" timestamp="1598316780748">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="298" y="51" width="787" height="700" key="find.popup/0.0.1366.768@0.0.1366.768" timestamp="1598316780748" />
+    <state x="481" y="53" width="369" height="666" key="ftp.server.browser" timestamp="1598294380840">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="481" y="53" width="369" height="666" key="ftp.server.browser/0.0.1366.768@0.0.1366.768" timestamp="1598294380840" />
+  </component>
+</project>
