@@ -56,7 +56,7 @@ $route->get("/termos", "Web:terms");
  */
 $route->group("/app");
 //$route->get("/", "App:home");
-$route->get("/", "App:profile");
+$route->get("/", "App:welcome");
 $route->get("/receber", "App:income");
 $route->get("/receber/{status}/{category}/{date}", "App:income");
 $route->get("/pagar", "App:expense");

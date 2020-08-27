@@ -82,6 +82,12 @@ class Users extends Admin
             $userCreate->email = $data["email"];
             $userCreate->password = $data["password"];
             $userCreate->level = $data["level"];
+            $userCreate->street = $data["street"];
+            $userCreate->number = $data["number"];
+            $userCreate->complement = $data["complement"];
+            $userCreate->city = $data["city"];
+            $userCreate->state = $data["state"];
+            $userCreate->zip = $data["zip"];
             $userCreate->genre = $data["genre"];
             $userCreate->datebirth = date_fmt_back($data["datebirth"]);
             $userCreate->document = preg_replace("/[^0-9]/", "", $data["document"]);
@@ -132,6 +138,12 @@ class Users extends Admin
             $userUpdate->password = (!empty($data["password"]) ? $data["password"] : $userUpdate->password);
             $userUpdate->level = $data["level"];
             $userUpdate->genre = $data["genre"];
+            $userUpdate->street = $data["street"];
+            $userUpdate->number = $data["number"];
+            $userUpdate->complement = $data["complement"];
+            $userUpdate->city = $data["city"];
+            $userUpdate->state = $data["state"];
+            $userUpdate->zip = $data["zip"];
             $userUpdate->datebirth = date_fmt_back($data["datebirth"]);
             $userUpdate->document = preg_replace("/[^0-9]/", "", $data["document"]);
             $userUpdate->status = $data["status"];

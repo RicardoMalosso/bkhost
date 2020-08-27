@@ -536,7 +536,7 @@ class Web extends Controller
 
             default:
                 $error->code = $data['errcode'];
-                $error->title = "Ooops. Conteúdo indispinível :/";
+                $error->title = "Ooops. Conteúdo indisponível :/";
                 $error->message = "Sentimos muito, mas o conteúdo que você tentou acessar não existe, está indisponível no momento ou foi removido :/";
                 $error->linkTitle = "Continue navegando!";
                 $error->link = url_back();

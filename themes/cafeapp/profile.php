@@ -35,6 +35,48 @@
 
         <div class="label_group">
             <label>
+                <span class="field icon-user">Endereço:</span>
+                <input class="radius" type="text" name="street" required
+                       value="<?= $user->street; ?>"/>
+            </label>
+
+            <label>
+                <span class="field icon-user">Número:</span>
+                <input class="radius" type="text" name="number" required
+                       value="<?= $user->number; ?>"/>
+            </label>
+        </div>
+
+        <div class="label_group">
+            <label>
+                <span class="field icon-user">Complemento:</span>
+                <input class="radius" type="text" name="complement" required
+                       value="<?= $user->complement; ?>"/>
+            </label>
+
+            <label>
+                <span class="field icon-user">Cidade:</span>
+                <input class="radius" type="text" name="city" required
+                       value="<?= $user->city; ?>"/>
+            </label>
+        </div>
+
+        <div class="label_group">
+            <label>
+                <span class="field icon-user">Estado:</span>
+                <input class="radius" type="text" name="state" required
+                       value="<?= $user->state; ?>"/>
+            </label>
+
+            <label>
+                <span class="field icon-user">CEP:</span>
+                <input class="radius" type="text" name="zip" required
+                       value="<?= $user->zip; ?>"/>
+            </label>
+        </div>
+
+        <div class="label_group">
+            <label>
                 <span class="field icon-calendar">Nascimento:</span>
                 <input class="radius mask-date" type="text" name="datebirth" placeholder="dd/mm/yyyy" required
                        value="<?= ($user->datebirth ? date_fmt($user->datebirth, "d/m/Y") : null); ?>"/>

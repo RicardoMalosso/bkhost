@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="BKHOST" remoteFilesAllowedToDisappearOnAutoupload="false" autoUploadExternalChanges="true">
+  <component name="PublishConfigData" serverName="BKhost">
     <serverData>
       <paths name="BKHOST">
         <serverdata>
@@ -9,7 +9,13 @@
           </mappings>
         </serverdata>
       </paths>
+      <paths name="BKhost">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="bkhost" />
+          </mappings>
+        </serverdata>
+      </paths>
     </serverData>
-    <option name="myAutoUpload" value="ALWAYS" />
   </component>
 </project>

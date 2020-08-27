@@ -573,6 +573,12 @@ class App extends Controller
             $user->first_name = $data["first_name"];
             $user->last_name = $data["last_name"];
             $user->genre = $data["genre"];
+            $user->street = $data["street"];
+            $user->number = $data["number"];
+            $user->complement = $data["complement"];
+            $user->city = $data["city"];
+            $user->state = $data["state"];
+            $user->zip = $data["zip"];
             $user->datebirth = "{$y}-{$m}-{$d}";
             $user->document = preg_replace("/[^0-9]/", "", $data["document"]);
 
@@ -640,6 +646,32 @@ class App extends Controller
         );
 
         echo $this->view->render("signature", [
+            "head" => $head,
+            "subscription" => (new AppSubscription())
+                ->find("user_id = :user AND status != :status", "user={$this->user->id}&status=canceled")
+                ->fetch(),
+            "orders" => (new AppOrder())
+                ->find("user_id = :user", "user={$this->user->id}")
+                ->order("created_at DESC")
+                ->fetch(true),
+            "plans" => (new AppPlan())
+                ->find("status = :status", "status=active")
+                ->order("name, price")
+                ->fetch(true)
+        ]);
+    }
+
+    public function welcome(?array $data): void
+    {
+        $head = $this->seo->render(
+            "Assinatura - " . CONF_SITE_NAME,
+            CONF_SITE_DESC,
+            url(),
+            theme("/assets/images/share.jpg"),
+            false
+        );
+
+        echo $this->view->render("welcome", [
             "head" => $head,
             "subscription" => (new AppSubscription())
                 ->find("user_id = :user AND status != :status", "user={$this->user->id}&status=canceled")

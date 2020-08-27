@@ -27,7 +27,7 @@
             </div>
 
             <div class="form-group">
-                <label for="genre">Genero</label>
+                <label for="genre">Gênero</label>
                 <select name="genre" id="genre" class="form-control">
                     <option value="male">Masculino</option>
                     <option value="female">Feminino</option>
@@ -38,6 +38,39 @@
             <div class="form-group">
                 <label for="photo">Foto</label>
                 <input type="file" name="photo" id="photo" class="form-control-file">
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-8">
+                    <label for="street">Endereço</label>
+                    <input type="text" name="street"  id="street" placeholder="Endereço" class="form-control" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="number">Número</label>
+                    <input type="text" name="number" id="number" placeholder="Número" class="form-control" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="complement">Complemento</label>
+                    <input type="text" name="complement" id="complement" placeholder="Complemento"   class="form-control">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="complement">Cidade</label>
+                    <input type="text" name="city" id="city" placeholder="Cidade" class="form-control">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="complement">Estado</label>
+                    <input type="text" name="state" id="state" placeholder="Estado" class="form-control">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="complement">CEP</label>
+                    <input type="text" name="zip" id="zip" placeholder="Cep" class="form-control">
+                </div>
             </div>
 
             <div class="form-row">
@@ -139,6 +172,39 @@
                         <label for="photo">Foto</label>
                         <input type="file" name="photo" id="photo" class="form-control-file">
                     </div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-8">
+                    <label for="street">Endereço</label>
+                    <input type="text" name="street"  id="street" value="<?= $user->street; ?>" class="form-control" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="number">Número</label>
+                    <input type="text" name="number" id="number" value="<?= $user->number; ?>" class="form-control" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="complement">Complemento</label>
+                    <input type="text" name="complement" id="complement" value="<?= $user->complement; ?>" class="form-control">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="complement">Cidade</label>
+                    <input type="text" name="city" id="city" value="<?= $user->city; ?>" class="form-control">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="complement">Estado</label>
+                    <input type="text" name="state" id="state" value="<?= $user->state; ?>"  class="form-control">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="complement">CEP</label>
+                    <input type="text" name="zip" id="zip" value="<?= $user->zip; ?>" class="form-control">
                 </div>
             </div>
 

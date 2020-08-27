@@ -38,6 +38,22 @@
                     <input type="file" name="photo"/>
                 </label>
 
+                <div class="form-row">
+                    <div class="form-group col-md-8">
+                        <label for="street">Endereço</label>
+                        <input type="text" name="street"  id="street" placeholder="Endereço" class="form-control" required>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="number">Número</label>
+                        <input type="text" name="number" id="number" placeholder="Número" class="form-control" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="complement">Complemento</label>
+                    <input type="text" name="complement" id="complement" class="form-control">
+                </div>
+
                 <div class="label_g2">
                     <label class="label">
                         <span class="legend">Nascimento:</span>

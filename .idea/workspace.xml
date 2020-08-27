@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdf33931-f8e6-48c6-bb06-6f7b56d52f46" name="Default Changelist" comment="" />
+    <list default="true" id="cdf33931-f8e6-48c6-bb06-6f7b56d52f46" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/themes/cafeapp/welcome.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BKHOST_ASHJYHGHJGVHJGGHJYG.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bkhost.zip" beforeDir="false" afterPath="$PROJECT_DIR$/bkhost.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/App/Admin/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/App/Admin/Users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/App/App.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/App/App.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/App/Web.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/App/Web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeadm/widgets/users/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafeadm/widgets/users/user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeapp/_theme.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafeapp/_theme.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeapp/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafeapp/profile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/sb-admin/assets/script.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/sb-admin/assets/script.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/sb-admin/assets/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/sb-admin/assets/style.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/sb-admin/widgets/users/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/sb-admin/widgets/users/user.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +35,9 @@
         <option value="composer.json" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -55,7 +74,9 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="web.server" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -73,6 +94,9 @@
       <workItem from="1598313513875" duration="4022000" />
       <workItem from="1598386650355" duration="9980000" />
       <workItem from="1598479016219" duration="625000" />
+      <workItem from="1598542992352" duration="2596000" />
+      <workItem from="1598545920364" duration="6075000" />
+      <workItem from="1598559938746" duration="9258000" />
     </task>
     <servers />
   </component>
@@ -96,14 +120,38 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="401" y="63" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1598297898695" />
-    <state x="89" y="0" key="SettingsEditor" timestamp="1598298155377">
+    <state width="1312" height="172" key="GridCell.Tab.0.bottom" timestamp="1598559667117">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="89" y="0" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1598298155377" />
-    <state x="298" y="51" width="787" height="700" key="find.popup" timestamp="1598316780748">
+    <state width="1312" height="172" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1598559667117" />
+    <state width="1312" height="172" key="GridCell.Tab.0.center" timestamp="1598559667117">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="298" y="51" width="787" height="700" key="find.popup/0.0.1366.768@0.0.1366.768" timestamp="1598316780748" />
+    <state width="1312" height="172" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1598559667117" />
+    <state width="1312" height="172" key="GridCell.Tab.0.left" timestamp="1598559667117">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1312" height="172" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1598559667117" />
+    <state width="1312" height="172" key="GridCell.Tab.0.right" timestamp="1598559667117">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1312" height="172" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1598559667117" />
+    <state x="415" y="290" key="NewPhpFileDialog" timestamp="1598566293454">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="415" y="290" key="NewPhpFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1598566293454" />
+    <state x="89" y="0" key="SettingsEditor" timestamp="1598571088881">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="89" y="0" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1598571088881" />
+    <state x="175" y="52" key="Vcs.Push.Dialog.v2" timestamp="1598571932256">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="175" y="52" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1598571932256" />
+    <state x="298" y="51" width="787" height="700" key="find.popup" timestamp="1598566663585">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="298" y="51" width="787" height="700" key="find.popup/0.0.1366.768@0.0.1366.768" timestamp="1598566663585" />
     <state x="481" y="53" width="369" height="666" key="ftp.server.browser" timestamp="1598294380840">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
