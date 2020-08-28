@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdf33931-f8e6-48c6-bb06-6f7b56d52f46" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/themes/cafeapp/welcome.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BKHOST_ASHJYHGHJGVHJGGHJYG.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bkhost.zip" beforeDir="false" afterPath="$PROJECT_DIR$/bkhost.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/App/Admin/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/App/Admin/Users.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/App/App.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/App/App.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/App/Web.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/App/Web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/cafeadm/widgets/users/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafeadm/widgets/users/user.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/cafeapp/_theme.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafeapp/_theme.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/cafeapp/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafeapp/profile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/sb-admin/assets/script.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/sb-admin/assets/script.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/sb-admin/assets/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/sb-admin/assets/style.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/sb-admin/widgets/users/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/sb-admin/widgets/users/user.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +23,19 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Gianni &lt;gmalosso@hotmail.com&gt;" />
+      </list>
+    </option>
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -96,26 +94,50 @@
       <workItem from="1598479016219" duration="625000" />
       <workItem from="1598542992352" duration="2596000" />
       <workItem from="1598545920364" duration="6075000" />
-      <workItem from="1598559938746" duration="9258000" />
+      <workItem from="1598559938746" duration="10571000" />
     </task>
+    <task id="LOCAL-00001" summary="Primeiro commmit&#10;front end quase pronto&#10;tabela users pronta">
+      <created>1598572198042</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1598572198042</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Primeiro commmit&#10;front end quase pronto&#10;tabela users pronta" />
+    <option name="LAST_COMMIT_MESSAGE" value="Primeiro commmit&#10;front end quase pronto&#10;tabela users pronta" />
   </component>
   <component name="WindowStateProjectService">
     <state x="215" y="45" width="1016" height="683" key="#Deployment" timestamp="1598301189693">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="215" y="45" width="1016" height="683" key="#Deployment/0.0.1366.768@0.0.1366.768" timestamp="1598301189693" />
+    <state x="282" y="165" key="#Notifications" timestamp="1598573013622">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="282" y="165" key="#Notifications/0.0.1366.768@0.0.1366.768" timestamp="1598573013622" />
     <state x="105" y="0" key="#Options" timestamp="1598314011051">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="105" y="0" key="#Options/0.0.1366.768@0.0.1366.768" timestamp="1598314011051" />
+    <state x="30" y="0" key="CommitChangelistDialog2" timestamp="1598572164124">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="30" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1598572164124" />
     <state x="338" y="281" key="ComposerInitDialogKey" timestamp="1598295534824">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="338" y="281" key="ComposerInitDialogKey/0.0.1366.768@0.0.1366.768" timestamp="1598295534824" />
+    <state x="129" y="57" key="DiffContextDialog" timestamp="1598572494128">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="129" y="57" key="DiffContextDialog/0.0.1366.768@0.0.1366.768" timestamp="1598572494128" />
     <state x="401" y="63" key="FileChooserDialogImpl" timestamp="1598297898695">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -140,14 +162,18 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="415" y="290" key="NewPhpFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1598566293454" />
-    <state x="89" y="0" key="SettingsEditor" timestamp="1598571088881">
+    <state x="89" y="0" key="SettingsEditor" timestamp="1598573310537">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="89" y="0" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1598571088881" />
-    <state x="175" y="52" key="Vcs.Push.Dialog.v2" timestamp="1598571932256">
+    <state x="89" y="0" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1598573310537" />
+    <state x="175" y="52" key="Vcs.Push.Dialog.v2" timestamp="1598572971222">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="175" y="52" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1598571932256" />
+    <state x="175" y="52" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1598572971222" />
+    <state x="381" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598572872485">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="381" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.768@0.0.1366.768" timestamp="1598572872485" />
     <state x="298" y="51" width="787" height="700" key="find.popup" timestamp="1598566663585">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -156,5 +182,9 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="481" y="53" width="369" height="666" key="ftp.server.browser/0.0.1366.768@0.0.1366.768" timestamp="1598294380840" />
+    <state x="362" y="264" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1598573363285">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="362" y="264" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1366.768@0.0.1366.768" timestamp="1598573363284" />
   </component>
 </project>
