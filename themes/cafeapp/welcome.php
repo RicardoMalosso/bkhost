@@ -15,24 +15,18 @@
 
     
         
-
+    <?php if ($register) : ?>
         <?php foreach ($register as $umregister) : ?>
             <div class="app_formbox app_widget">
-            <h4> Informações do registro <?= $umregister->register_name ?></h4><br/>
-            Data de cadastramento inicial do domínio:  <?= date("d/m/Y", strtotime($umregister->creation)) ?><br/>
-            Data de expiração do registro do domínio:  <?= date("d/m/Y", strtotime($umregister->expiration)) ?><br/>
-            <br/>
-            Contato do Administrador:  <?= $umregister->contact_admin ?><br/>
-            Contato Técnico:  <?= $umregister->contact_technical ?><br/>
-            Contato Financeiro:  <?= $umregister->contact_financial ?><br/>
-            DNS 1:  <?= $umregister->dns_1 ?><br/>
-            DNS 2:  <?= $umregister->dns_2 ?><br/>
-            DNS 3:  <?= $umregister->dns_3 ?><br/>
-            <br/>
-            Notas do registro:
-            <br/>  <?= $umregister->notes ?><br/>
+            <h4> Domínio (<?= $umregister->register_name ?>) </h4><br/>
+            Período:  <?= date("d/m/Y", strtotime($umregister->creation)) ?>
+             a  <?= date("d/m/Y", strtotime($umregister->expiration)) ?>
+             <br/><br/>
+             <hr width="75%" />
+            <br/>            
+            <br/>  <?php echo $umregister->notes ? html_entity_decode($umregister->notes) : ''; ?><br/>
             </div>
         <?php endforeach; ?>
-
+        <?php endif; ?>
     
 </article>

@@ -105,9 +105,10 @@ class Registers extends Admin
         if (!empty($data["action"]) && $data["action"] == "create") {
 
 
-            $data = filter_var_array($data, FILTER_SANITIZE_STRIPPED);
 
             $registerCreate = new Register();
+            $registerCreate->notes = $data["notes"];
+            $data = filter_var_array($data, FILTER_SANITIZE_STRIPPED);
             $registerCreate->user_id = $data["user_id"];
             $registerCreate->register_name = $data["register_name"];
 
@@ -120,7 +121,7 @@ class Registers extends Admin
             $registerCreate->dns_2 = $data["dns_2"];
             $registerCreate->dns_3 = $data["dns_3"];
             $registerCreate->status = $data["status"];
-            $registerCreate->notes = $data["notes"];
+            
 
             if (!$registerCreate->save()) {
                 $json["message"] = $registerCreate->message()->render();
@@ -140,8 +141,9 @@ class Registers extends Admin
 
 
 
-            $data = filter_var_array($data, FILTER_SANITIZE_STRIPPED);
+
             $registerUpdate = (new Register())->findByRegisterId($data["register_id"]);
+
 
             if (!$registerUpdate) {
 
@@ -149,7 +151,8 @@ class Registers extends Admin
                 echo json_encode(["redirect" => url("/admin/registers/home")]);
                 return;
             }
-
+            $registerUpdate->notes = $data["notes"];    
+            $data = filter_var_array($data, FILTER_SANITIZE_STRIPPED);
             $registerUpdate->register_name = $data["register_name"];
             $registerUpdate->creation = date_fmt_back($data["creation"]);
             $registerUpdate->expiration = date_fmt_back($data["expiration"]);
@@ -160,7 +163,6 @@ class Registers extends Admin
             $registerUpdate->dns_2 = $data["dns_2"];
             $registerUpdate->dns_3 = $data["dns_3"];
             $registerUpdate->status = $data["status"];
-            $registerUpdate->notes = $data["notes"];
 
 
             if (!$registerUpdate->save()) {

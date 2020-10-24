@@ -31,7 +31,7 @@
                 </div>
             </div>
 
-            <div class="form-row">
+<!--             <div class="form-row">
                 <div class="form-group col-md-4">
                     <label for="contact_admin">Id do Administrador</label>
                     <input type="text" name="contact_admin" id="contact_admin" placeholder="Id do Administrador" class="form-control">
@@ -59,7 +59,7 @@
                     <label for="dns_3">DNS 3</label>
                     <input type="text" name="dns_3" id="dns_3" placeholder="DNS 3" class="form-control">
                 </div>
-            </div>
+            </div> -->
 
             <div class="form-row">
                 <div class="form-group col-md-12">
@@ -80,7 +80,7 @@
             <div class="form-row">
                 <div class="form-group col-md-12">
                     <label for="notes">Notas do registro (Logins, Senhas, outras informações úteis)</label>
-                    <textarea class="form-control" name="notes" id="notes" rows="5" placeholder="Notas do registro, logins, senhas, outras informações."><?php echo $register?$register->notes:''; ?></textarea>
+                    <textarea class="mce" name="notes" id="notes" rows="5" ><?php echo $register?$register->notes:''; ?></textarea>
                 </div>
             </div>
 
@@ -127,7 +127,7 @@
 
                 </div>
             </div>
-
+<!-- 
             <div class="form-row">
                 <div class="form-group col-md-4">
                     <label for="contact_admin">Id do Administrador</label>
@@ -156,7 +156,7 @@
                     <label for="dns_3">DNS 3</label>
                     <input type="text" name="dns_3" id="dns_3" value="<?= $register->dns_3; ?>" placeholder="DNS 3" class="form-control">
                 </div>
-            </div>
+            </div> -->
 
             <div class="form-row">
                 <div class="form-group col-md-12">
@@ -182,7 +182,7 @@
             <div class="form-row">
                 <div class="form-group col-md-12">
                     <label for="notes">Notas do registro (Logins, Senhas, outras informações úteis)</label>
-                    <textarea class="form-control" name="notes" id="notes" rows="5" placeholder="Notas do registro, logins, senhas, outras informações."><?php echo $register?$register->notes:''; ?></textarea>
+                    <textarea class="mce" name="notes" id="notes" rows="5" ><?php echo $register?$register->notes:''; ?></textarea>
                 </div>
             </div>
 
