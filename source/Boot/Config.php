@@ -4,7 +4,9 @@
  */
 if (strpos($_SERVER['HTTP_HOST'], "localhost")){
     define("CONF_DB_HOST", "localhost");
-    define("CONF_DB_USER", "root");
+    //define("CONF_DB_USER", "root");
+    //alterar de volta
+    define("CONF_DB_USER", "bkhost");
     define("CONF_DB_PASS", "");
     define("CONF_DB_NAME", "bkhost");
 } else {

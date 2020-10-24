@@ -1,66 +1,38 @@
 <?php $v->layout("_theme"); ?>
+<article class="app_signature radius">
+    <header class="app_signature_header">
+        <h2>Olá <?= "{$user->first_name}"; ?></h2><br>
+        <h2>Informações gerais da conta:</h2><br>
+        <p>Nome Completo: <?= "{$user->first_name} {$user->last_name}"; ?><br>
+            Endereço: <?= "{$user->street}, {$user->number} {$user->complement}"; ?><br>
+            Cidade: <?= "{$user->city}, {$user->state}"; ?><br>
+            CEP: <?= "{$user->zip}"; ?><br>
+            País: <?= "{$user->country}"; ?><br><br>
+            Email para notificação: <?= "{$user->email}"; ?><br>
+            Telefone para contato: <?= "{$user->phone}"; ?><br/><br/>
+            <h2>Meus Registros</h2>
+    </header>
 
-    <article class="app_signature radius">
-        <header class="app_signature_header gradient gradient-green">
-            <span class="icon icon-coffee icon-notext"></span>
-            <h2>Seja PRO por apenas R$ 0,16 centavos por dia e controle tudo!</h2>
-            <p>Crie multiplas carteiras para controlar suas finanças PF, PJ, contas bancárias, cartões de crédito,
-                poupanças... e libere o controle absoluto de suas contas.</p>
-        </header>
+    
+        
 
-        <section class="app_signature_resources">
-            <div class="app_signature_resources_overflow">
-                <h3>Compare as versões FREE e PRO e entenda!</h3>
-                <div class="app_signature_resources_item title">
-                    <p class="resouce">Recurso</p>
-                    <p class="check icon-user-plus">FREE</p>
-                    <p class="check icon-coffee">PRO</p>
-                </div>
-                <article class="app_signature_resources_item">
-                    <p class="resouce">Contas a receber</p>
-                    <p class="check icon-check icon-notext"></p>
-                    <p class="check icon-check icon-notext"></p>
-                </article>
-                <article class="app_signature_resources_item">
-                    <p class="resouce">Contas a pagar</p>
-                    <p class="check icon-check icon-notext"></p>
-                    <p class="check icon-check icon-notext"></p>
-                </article>
-                <article class="app_signature_resources_item">
-                    <p class="resouce">Parcelamento</p>
-                    <p class="check icon-check icon-notext"></p>
-                    <p class="check icon-check icon-notext"></p>
-                </article>
-                <article class="app_signature_resources_item">
-                    <p class="resouce">Contas a fixas</p>
-                    <p class="check icon-check icon-notext"></p>
-                    <p class="check icon-check icon-notext"></p>
-                </article>
-                <article class="app_signature_resources_item">
-                    <p class="resouce">Carteiras ilimitadas</p>
-                    <p class="check icon-error icon-notext"></p>
-                    <p class="check icon-check icon-notext"></p>
-                </article>
-                <article class="app_signature_resources_item">
-                    <p class="resouce">Vencimentos por e-mail</p>
-                    <p class="check icon-error icon-notext"></p>
-                    <p class="check icon-check icon-notext"></p>
-                </article>
-                <article class="app_signature_resources_item">
-                    <p class="resouce">PF, PJ, cartões, etc</p>
-                    <p class="check icon-error icon-notext"></p>
-                    <p class="check icon-check icon-notext"></p>
-                </article>
-                <article class="app_signature_resources_item">
-                    <p class="resouce">Filtro por fonte (carteira)</p>
-                    <p class="check icon-error icon-notext"></p>
-                    <p class="check icon-check icon-notext"></p>
-                </article>
-                <article class="app_signature_resources_item">
-                    <p class="resouce">Controle de saldo geral</p>
-                    <p class="check icon-error icon-notext"></p>
-                    <p class="check icon-check icon-notext"></p>
-                </article>
+        <?php foreach ($register as $umregister) : ?>
+            <div class="app_formbox app_widget">
+            <h4> Informações do registro <?= $umregister->register_name ?></h4><br/>
+            Data de cadastramento inicial do domínio:  <?= date("d/m/Y", strtotime($umregister->creation)) ?><br/>
+            Data de expiração do registro do domínio:  <?= date("d/m/Y", strtotime($umregister->expiration)) ?><br/>
+            <br/>
+            Contato do Administrador:  <?= $umregister->contact_admin ?><br/>
+            Contato Técnico:  <?= $umregister->contact_technical ?><br/>
+            Contato Financeiro:  <?= $umregister->contact_financial ?><br/>
+            DNS 1:  <?= $umregister->dns_1 ?><br/>
+            DNS 2:  <?= $umregister->dns_2 ?><br/>
+            DNS 3:  <?= $umregister->dns_3 ?><br/>
+            <br/>
+            Notas do registro:
+            <br/>  <?= $umregister->notes ?><br/>
             </div>
-        </section>
-    </article>
+        <?php endforeach; ?>
+
+    
+</article>

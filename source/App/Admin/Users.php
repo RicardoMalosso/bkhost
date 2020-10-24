@@ -88,6 +88,8 @@ class Users extends Admin
             $userCreate->city = $data["city"];
             $userCreate->state = $data["state"];
             $userCreate->zip = $data["zip"];
+            $userCreate->country = $data["country"];
+            $userCreate->phone = $data["phone"];
             $userCreate->genre = $data["genre"];
             $userCreate->datebirth = date_fmt_back($data["datebirth"]);
             $userCreate->document = preg_replace("/[^0-9]/", "", $data["document"]);
@@ -144,6 +146,8 @@ class Users extends Admin
             $userUpdate->city = $data["city"];
             $userUpdate->state = $data["state"];
             $userUpdate->zip = $data["zip"];
+            $userUpdate->country = $data["country"];
+            $userUpdate->phone = $data["phone"];
             $userUpdate->datebirth = date_fmt_back($data["datebirth"]);
             $userUpdate->document = preg_replace("/[^0-9]/", "", $data["document"]);
             $userUpdate->status = $data["status"];
@@ -176,6 +180,7 @@ class Users extends Admin
 
             $this->message->success("Usuário atualizado com sucesso...")->flash();
             echo json_encode(["reload" => true]);
+
             return;
         }
 

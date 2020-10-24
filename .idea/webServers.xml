@@ -3,7 +3,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="2945efba-6c2c-4727-9e76-84cf384f5802" name="BKHOST" url="http://ftp.bkhost.com.br">
-        <fileTransfer rootFolder="/themes" accessType="FTPS" host="ftp.bkhost.com.br" port="21">
+        <fileTransfer accessType="FTPS" host="ftp.bkhost.com.br" port="21">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
           </advancedOptions>

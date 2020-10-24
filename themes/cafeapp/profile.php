@@ -75,6 +75,21 @@
             </label>
         </div>
 
+
+        <div class="label_group">
+            <label>
+                <span class="field icon-user">País:</span>
+                <input class="radius" type="text" name="country" required
+                       value="<?= $user->country; ?>"/>
+            </label>
+
+            <label>
+                <span class="field icon-user">Telefone:</span>
+                <input class="radius" type="text" name="phone" required
+                       value="<?= $user->phone; ?>"/>
+            </label>
+        </div>
+
         <div class="label_group">
             <label>
                 <span class="field icon-calendar">Nascimento:</span>

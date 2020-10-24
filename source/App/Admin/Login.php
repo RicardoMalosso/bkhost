@@ -45,7 +45,7 @@ class Login extends Controller
         }
 
         if (!empty($data["email"]) && !empty($data["password"])) {
-            if (request_limit("loginLogin", 3, 5 * 60)) {
+            if (request_limit("loginLogin", 10, 5 * 60)) {
                 $json["message"] = $this->message->error("ACESSO NEGADO: Aguarde por 5 minutos para tentar novamente.")->render();
                 echo json_encode($json);
                 return;
@@ -53,6 +53,7 @@ class Login extends Controller
 
             $auth = new Auth();
             $login = $auth->login($data["email"], $data["password"], true, 5);
+            
 
             if ($login) {
                 $json["redirect"] = url("/admin/dash");

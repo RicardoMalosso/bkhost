@@ -122,13 +122,31 @@ abstract class Model
      */
     public function find(?string $terms = null, ?string $params = null, string $columns = "*")
     {
+        //lista as tabelas que devemos verificar se o campo deleted está preenchido
+        $tablesToCheck = ['users', 'registers', 'notes'];
+        $extracheck = '';
+        //verifica se a tabela está na lista acima, caso positivo
+        //determina que devemos verificar se o campo deleted é 0.
+        //caso não seja uma das tabelas acima, roda a query normalmente.
+        if (in_array($this->entity, $tablesToCheck)){
+            $extracheck = 'is_deleted != 1';
+            if ($terms){
+                $terms .= ' and ' . $extracheck;
+            } else{
+                $extracheck = ' where ' . $extracheck;
+            }
+        }
+
+        
         if ($terms) {
-            $this->query = "SELECT {$columns} FROM {$this->entity} WHERE {$terms}";
+            $this->query = "SELECT {$columns} FROM {$this->entity} where {$terms}";
             parse_str($params, $this->params);
+            $_SESSION['query'] = $this->query;
             return $this;
         }
 
-        $this->query = "SELECT {$columns} FROM {$this->entity}";
+        $this->query = "SELECT {$columns} FROM {$this->entity}" . $extracheck;
+
         return $this;
     }
 
@@ -278,6 +296,7 @@ abstract class Model
         if (empty($this->id)) {
             $id = $this->create($this->safe());
             if ($this->fail()) {
+                
                 $this->message->error("Erro ao cadastrar, verifique os dados");
                 return false;
             }
@@ -303,7 +322,8 @@ abstract class Model
     public function delete(string $terms, ?string $params): bool
     {
         try {
-            $stmt = Connect::getInstance()->prepare("DELETE FROM {$this->entity} WHERE {$terms}");
+            //$stmt = Connect::getInstance()->prepare("DELETE FROM {$this->entity} WHERE {$terms}");
+            $stmt = Connect::getInstance()->prepare("UPDATE {$this->entity} SET is_deleted = 1 WHERE {$terms}");
             if ($params) {
                 parse_str($params, $params);
                 $stmt->execute($params);

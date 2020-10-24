@@ -7,6 +7,7 @@
     <?= $head; ?>
 
     <link rel="stylesheet" href="<?= theme("/assets/style.css", CONF_VIEW_APP); ?>"/>
+    <link rel="stylesheet" href="<?= theme("/../cafeweb/assets/style.css", CONF_VIEW_APP); ?>"/>
 <!--    <link rel="icon" type="image/png" href="--><?//= theme("/assets/images/favicon.png", CONF_VIEW_APP); ?><!--"/>-->
 </head>
 <body>
@@ -61,8 +62,8 @@
     <?= $v->insert("views/modals"); ?>
 </div>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-53658515-18"></script>
 <script src="<?= theme("/assets/scripts.js", CONF_VIEW_APP); ?>"></script>
+<script src="<?= theme("/../cafeweb/assets/scripts.js"); ?>"></script>
 <?= $v->section("scripts"); ?>
 
 </body>

@@ -6,7 +6,7 @@
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
         <h1 class="h3 mb-0 text-gray-800">
             <i class="fas fa-fw fa-user"></i>
-            Usuários
+            Clientes
         </h1>
 
         <!-- Search -->
@@ -14,8 +14,8 @@
               class="d-none d-sm-inline-block form-inline ml-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
             <div class="input-group">
                 <input type="search" name="s" value="<?= $search; ?>"
-                       placeholder="Pesquisar usuário..."
-                       aria-label="Search" aria-describedby="basic-addon2"
+                       placeholder="Pesquisar cliente..."
+                       aria-label="Pesquisa" aria-describedby="basic-addon2"
                        class="form-control bg-white border-0 small">
                 <div class="input-group-append">
                     <button class="btn btn-primary">

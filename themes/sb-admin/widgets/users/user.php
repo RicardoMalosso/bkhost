@@ -2,7 +2,7 @@
 
 <div class="container-fluid">
 
-    <?php if (!$user): ?>
+    <?php if (!$user) : ?>
         <!-- Page Heading -->
         <div class="d-sm-flex align-items-center justify-content-between mb-4">
             <h1 class="h3 mb-0 text-gray-800">
@@ -13,12 +13,12 @@
 
         <form action="<?= url("/admin/users/user"); ?>" method="post">
             <!--ACTION SPOOFING-->
-            <input type="hidden" name="action" value="create"/>
+            <input type="hidden" name="action" value="create" />
 
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="first_name">Nome</label>
-                    <input type="text" name="first_name"  id="first_name" placeholder="Primeiro nome" class="form-control" required>
+                    <input type="text" name="first_name" id="first_name" placeholder="Primeiro nome" class="form-control" required>
                 </div>
                 <div class="form-group col-md-6">
                     <label for="last_name">Sobrenome</label>
@@ -43,7 +43,7 @@
             <div class="form-row">
                 <div class="form-group col-md-8">
                     <label for="street">Endereço</label>
-                    <input type="text" name="street"  id="street" placeholder="Endereço" class="form-control" required>
+                    <input type="text" name="street" id="street" placeholder="Endereço" class="form-control" required>
                 </div>
                 <div class="form-group col-md-4">
                     <label for="number">Número</label>
@@ -54,29 +54,40 @@
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="complement">Complemento</label>
-                    <input type="text" name="complement" id="complement" placeholder="Complemento"   class="form-control">
+                    <input type="text" name="complement" id="complement" placeholder="Complemento" class="form-control">
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="complement">Cidade</label>
+                    <label for="city">Cidade</label>
                     <input type="text" name="city" id="city" placeholder="Cidade" class="form-control">
                 </div>
             </div>
 
             <div class="form-row">
                 <div class="form-group col-md-6">
-                    <label for="complement">Estado</label>
+                    <label for="state">Estado</label>
                     <input type="text" name="state" id="state" placeholder="Estado" class="form-control">
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="complement">CEP</label>
+                    <label for="zip">CEP</label>
                     <input type="text" name="zip" id="zip" placeholder="Cep" class="form-control">
                 </div>
             </div>
 
             <div class="form-row">
                 <div class="form-group col-md-6">
+                    <label for="country">País</label>
+                    <input type="text" name="country" id="country" placeholder="País" class="form-control">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="phone">Telefones</label>
+                    <input type="text" name="phone" id="phone" placeholder="Telefones" class="form-control">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
                     <label for="datebirth">Nascimento</label>
-                    <input type="text" name="datebirth"  id="datebirth" placeholder="dd/mm/yyyy" class="mask-date form-control">
+                    <input type="text" name="datebirth" id="datebirth" placeholder="dd/mm/yyyy" class="mask-date form-control">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="document">Documento</label>
@@ -87,7 +98,7 @@
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="email">E-mail</label>
-                    <input type="email" name="email"  id="email" placeholder="Melhor e-mail" class="form-control" required>
+                    <input type="email" name="email" id="email" placeholder="Melhor e-mail" class="form-control" required>
                 </div>
                 <div class="form-group col-md-6">
                     <label for="password">Senha</label>
@@ -121,7 +132,7 @@
                 </button>
             </div>
         </form>
-    <?php else: ?>
+    <?php else : ?>
         <!-- Page Heading -->
         <div class="d-sm-flex align-items-center justify-content-between mb-4">
             <h1 class="h3 mb-0 text-gray-800">
@@ -132,7 +143,7 @@
 
         <form action="<?= url("/admin/users/user/{$user->id}"); ?>" method="post">
             <!--ACTION SPOOFING-->
-            <input type="hidden" name="action" value="update"/>
+            <input type="hidden" name="action" value="update" />
 
             <div class="row">
                 <div class="col-lg-4 col-xl-3 order-1">
@@ -145,7 +156,7 @@
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="first_name">Nome</label>
-                            <input type="text" name="first_name"  id="first_name" value="<?= $user->first_name; ?>" placeholder="Primeiro nome" class="form-control" required>
+                            <input type="text" name="first_name" id="first_name" value="<?= $user->first_name; ?>" placeholder="Primeiro nome" class="form-control" required>
                         </div>
                         <div class="form-group col-md-6">
                             <label for="last_name">Sobrenome</label>
@@ -178,7 +189,7 @@
             <div class="form-row">
                 <div class="form-group col-md-8">
                     <label for="street">Endereço</label>
-                    <input type="text" name="street"  id="street" value="<?= $user->street; ?>" class="form-control" required>
+                    <input type="text" name="street" id="street" value="<?= $user->street; ?>" class="form-control" required>
                 </div>
                 <div class="form-group col-md-4">
                     <label for="number">Número</label>
@@ -192,26 +203,37 @@
                     <input type="text" name="complement" id="complement" value="<?= $user->complement; ?>" class="form-control">
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="complement">Cidade</label>
+                    <label for="city">Cidade</label>
                     <input type="text" name="city" id="city" value="<?= $user->city; ?>" class="form-control">
                 </div>
             </div>
 
             <div class="form-row">
                 <div class="form-group col-md-6">
-                    <label for="complement">Estado</label>
-                    <input type="text" name="state" id="state" value="<?= $user->state; ?>"  class="form-control">
+                    <label for="state">Estado</label>
+                    <input type="text" name="state" id="state" value="<?= $user->state; ?>" class="form-control">
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="complement">CEP</label>
+                    <label for="zip">CEP</label>
                     <input type="text" name="zip" id="zip" value="<?= $user->zip; ?>" class="form-control">
                 </div>
             </div>
 
             <div class="form-row">
                 <div class="form-group col-md-6">
+                    <label for="country">País</label>
+                    <input type="text" name="country" id="country" value="<?= $user->country; ?>" class="form-control">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="phone">Telefones</label>
+                    <input type="text" name="phone" id="phone" value="<?= $user->phone; ?>" class="form-control">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
                     <label for="datebirth">Nascimento</label>
-                    <input type="text" name="datebirth"  id="datebirth" value="<?= date_fmt($user->datebirth, "d/m/Y"); ?>" placeholder="dd/mm/yyyy" class="mask-date form-control">
+                    <input type="text" name="datebirth" id="datebirth" value="<?= date_fmt($user->datebirth, "d/m/Y"); ?>" placeholder="dd/mm/yyyy" class="mask-date form-control">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="document">Documento</label>
@@ -222,7 +244,7 @@
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="email">E-mail</label>
-                    <input type="email" name="email"  id="email" value="<?= $user->email; ?>" placeholder="Melhor e-mail" class="form-control" required>
+                    <input type="email" name="email" id="email" value="<?= $user->email; ?>" placeholder="Melhor e-mail" class="form-control" required>
                 </div>
                 <div class="form-group col-md-6">
                     <label for="password">Alterar senha</label>
@@ -261,11 +283,7 @@
 
             <div class="form-row">
                 <div class="form-group col-md-6">
-                    <a href="#" class="btn btn-danger btn-icon-split"
-                       data-post="<?= url("/admin/users/user/{$user->id}"); ?>"
-                       data-action="delete"
-                       data-confirm="ATENÇÃO: Tem certeza que deseja excluir o usuário e todos os dados relacionados a ele? Essa ação não pode ser feita!"
-                       data-user_id="<?= $user->id; ?>">
+                    <a href="#" class="btn btn-danger btn-icon-split" data-post="<?= url("/admin/users/user/{$user->id}"); ?>" data-action="delete" data-confirm="ATENÇÃO: Tem certeza que deseja excluir o usuário e todos os dados relacionados a ele? Essa ação não pode ser feita!" data-user_id="<?= $user->id; ?>">
                         <span class="icon text-white-50">
                             <i class="fas fa-trash"></i>
                         </span>
@@ -285,4 +303,3 @@
     <?php endif; ?>
 
 </div>
-

@@ -48,7 +48,12 @@ echo $nav("FAQs", "fas fa-fw fa-comment", [
 ]);
 
 // Usuários
-echo $nav("Usuários", "fas fa-fw fa-user", [
-    "Usuários" => "users/home",
-    "Novo Usuário" => "users/user"
+echo $nav("Clientes", "fas fa-fw fa-user", [
+    "Clientes" => "users/home",
+    "Novo Cliente" => "users/user"
+]);
+
+// Domínios
+echo $nav("Registros", "fas fa-fw fa-user", [
+    "Clientes" => "registers/home",
 ]);

@@ -12,13 +12,16 @@ use Source\Models\CafeApp\AppOrder;
 use Source\Models\CafeApp\AppPlan;
 use Source\Models\CafeApp\AppSubscription;
 use Source\Models\CafeApp\AppWallet;
+use Source\Models\Faq\Question;
 use Source\Models\Post;
 use Source\Models\Report\Access;
 use Source\Models\Report\Online;
 use Source\Models\User;
+use Source\Models\Register;
 use Source\Support\Email;
 use Source\Support\Thumb;
 use Source\Support\Upload;
+
 
 /**
  * Class App
@@ -400,7 +403,7 @@ class App extends Controller
             return;
         }
 
-        $subject = date_fmt() . " - {$data["subject"]}";
+        $subject = date('d/m/Y \à\s H:i:s') . " - {$data["subject"]}";
         $message = filter_var($data["message"], FILTER_SANITIZE_STRING);
 
         $view = new View(__DIR__ . "/../../shared/views/email");
@@ -579,6 +582,8 @@ class App extends Controller
             $user->city = $data["city"];
             $user->state = $data["state"];
             $user->zip = $data["zip"];
+            $user->country = $data["country"];
+            $user->phone = $data["phone"];
             $user->datebirth = "{$y}-{$m}-{$d}";
             $user->document = preg_replace("/[^0-9]/", "", $data["document"]);
 
@@ -671,21 +676,40 @@ class App extends Controller
             false
         );
 
+        $termos = "user_id = " . (string) $this->user->id;
+        $dominiosDoUser = (new Register())->find($termos)->fetch(true);
+
         echo $this->view->render("welcome", [
             "head" => $head,
-            "subscription" => (new AppSubscription())
-                ->find("user_id = :user AND status != :status", "user={$this->user->id}&status=canceled")
-                ->fetch(),
-            "orders" => (new AppOrder())
-                ->find("user_id = :user", "user={$this->user->id}")
-                ->order("created_at DESC")
-                ->fetch(true),
-            "plans" => (new AppPlan())
-                ->find("status = :status", "status=active")
-                ->order("name, price")
-                ->fetch(true)
+            "register" => $dominiosDoUser,
+            "user" => $this->user,
+            "photo" => ($this->user->photo() ? image($this->user->photo, 360, 360) :
+                theme("/assets/images/avatar.jpg", CONF_VIEW_APP))
         ]);
     }
+
+    /**
+     * SITE ABOUT
+     */
+    public function about(): void
+    {
+        $head = $this->seo->render(
+            "Descubra o " . CONF_SITE_NAME . " - " . CONF_SITE_DESC,
+            CONF_SITE_DESC,
+            url("/about"),
+            theme("/assets/images/share.jpg")
+        );
+
+        echo $this->view->render("about", [
+            "head" => $head,
+            "faq" => (new Question())
+                ->find()
+                ->order("order_by")
+                ->fetch(true),
+        ]);
+    }
+
+
 
     /**
      * APP LOGOUT

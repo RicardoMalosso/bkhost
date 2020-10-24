@@ -35,8 +35,8 @@ $route->get("/em/{category}/{page}", "Web:blogCategory");
 $route->group(null);
 $route->get("/entrar", "Web:login");
 $route->post("/entrar", "Web:login");
-$route->get("/cadastrar", "Web:register");
-$route->post("/cadastrar", "Web:register");
+$route->get("/cadastrar", "Web:registers");
+$route->post("/cadastrar", "Web:registers");
 $route->get("/recuperar", "Web:forget");
 $route->post("/recuperar", "Web:forget");
 $route->get("/recuperar/{code}", "Web:reset");
@@ -57,7 +57,7 @@ $route->get("/termos", "Web:terms");
 $route->group("/app");
 //$route->get("/", "App:home");
 $route->get("/", "App:welcome");
-$route->get("/receber", "App:income");
+$route->get("/about", "App:about");
 $route->get("/receber/{status}/{category}/{date}", "App:income");
 $route->get("/pagar", "App:expense");
 $route->get("/pagar/{status}/{category}/{date}", "App:expense");
@@ -82,7 +82,7 @@ $route->post("/wallets/{wallet}", "App:wallets");
  * ADMIN ROUTES
  */
 $route->namespace("Source\App\Admin");
-$route->group("/admin");
+$route->group("admin");
 
 //login
 $route->get("/", "Login:root");
@@ -108,6 +108,9 @@ $route->get("/control/plan", "Control:plan");
 $route->post("/control/plan", "Control:plan");
 $route->get("/control/plan/{plan_id}", "Control:plan");
 $route->post("/control/plan/{plan_id}", "Control:plan");
+$route->post("/control/plan", "Control:plan");
+
+
 
 //blog
 $route->get("/blog/home", "Blog:home");
@@ -144,6 +147,32 @@ $route->get("/users/user", "Users:user");
 $route->post("/users/user", "Users:user");
 $route->get("/users/user/{user_id}", "Users:user");
 $route->post("/users/user/{user_id}", "Users:user");
+
+//registers
+$route->get("/registers/home", "Registers:home");
+$route->post("/registers/home", "Registers:home");
+$route->get("/registers/home/{search}/{page}", "Registers:home");
+$route->get("/registers/register", "Registers:register");
+$route->post("/registers/register", "Registers:register");
+$route->get("/registers/register/{user_id}", "Registers:register");
+$route->post("/registers/register/{user_id}", "Registers:register");
+$route->get("/registers/register/{user_id}/{register_id}", "Registers:register");
+$route->post("/registers/register/{user_id}/{register_id}", "Registers:register");
+
+$route->get("/registers/register/{user_id}/new", "Registers:newRegister");
+$route->post("/registers/register/{user_id}/new", "Registers:newRegister");
+$route->get("/registers/registers2/{user_id}/new", "Registers:newRegister");
+
+//feito pelo ricardo, essa rota tenta mandar para um método separado
+//na controller, em vez de mandar para o mesmo método
+//esse método irá listar todos os domínios de um usuário
+$route->get("/registers/registers2/{user_id}", "Registers:registerList");
+
+$route->get("/teste/{user_id}", "Reg:listarDominiosDeUmUsuario");
+$route->post("/registers/alterar/{register_id}", "Reg:alterarDominio");
+$route->post("/registers/criar/{user_id}", "Reg:criarDominio");
+$route->post("/registers/apagar/{register_id}", "Reg:apagarDominio");
+
 
 //notification center
 $route->post("/notifications/count", "Notifications:count");

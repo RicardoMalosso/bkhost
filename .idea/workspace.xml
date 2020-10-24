@@ -1,8 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdf33931-f8e6-48c6-bb06-6f7b56d52f46" name="Default Changelist" comment="">
+    <list default="true" id="cdf33931-f8e6-48c6-bb06-6f7b56d52f46" name="Default Changelist" comment="Primeiro commmit&#10;front end quase pronto&#10;tabela users pronta">
+      <change afterPath="$PROJECT_DIR$/source/App/Admin/Domain.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/Models/Domain.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/cafeapp/about.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/cafeapp/assets/images/faq-title.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/sb-admin/widgets/domains/domain-list.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/sb-admin/widgets/domains/domain.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/sb-admin/widgets/domains/domains.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/sb-admin/widgets/domains/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bkhost.zip" beforeDir="false" afterPath="$PROJECT_DIR$/bkhost.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/App/Admin/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/App/Admin/Users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/App/App.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/App/App.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeadm/_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeadm/_login.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeadm/assets/css/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeadm/assets/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeadm/assets/images/avatar.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeadm/assets/images/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeadm/assets/images/image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeadm/assets/images/notify.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeadm/assets/images/selectarrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeadm/assets/js/login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeadm/assets/js/scripts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeadm/widgets/blog/categories.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeadm/widgets/blog/category.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeadm/widgets/blog/home.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeadm/widgets/blog/post.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeadm/widgets/blog/sidebar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeadm/widgets/control/home.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeadm/widgets/control/plan.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeadm/widgets/control/plans.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeadm/widgets/control/sidebar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeadm/widgets/control/subscription.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeadm/widgets/control/subscriptions.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeadm/widgets/dash/home.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeadm/widgets/dash/sidebar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeadm/widgets/faqs/channel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeadm/widgets/faqs/home.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeadm/widgets/faqs/question.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeadm/widgets/faqs/sidebar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeadm/widgets/login/login.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeadm/widgets/users/home.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeadm/widgets/users/sidebar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeadm/widgets/users/user.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeapp/_theme.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafeapp/_theme.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeapp/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafeapp/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeapp/assets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafeapp/assets/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeapp/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafeapp/profile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeapp/views/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafeapp/views/sidebar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafeapp/welcome.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafeapp/welcome.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/sb-admin/navigation.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/sb-admin/navigation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/sb-admin/widgets/users/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/sb-admin/widgets/users/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/sb-admin/widgets/users/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/sb-admin/widgets/users/user.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +81,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="ADD_SUFFIX_TO_CHERRY_PICKS_OF_PUBLISHED_COMMITS" value="false" />
+    <option name="INCOMING_CHECK_STRATEGY" value="Never" />
+    <option name="PREVIEW_PUSH_ON_COMMIT_AND_PUSH" value="false" />
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="gmalosso" />
         <option value="Gianni &lt;gmalosso@hotmail.com&gt;" />
       </list>
     </option>
@@ -36,24 +98,33 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
+    <option name="WARN_ABOUT_CRLF" value="false" />
+    <option name="WARN_ABOUT_DETACHED_HEAD" value="false" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
-      <path value="$PROJECT_DIR$/vendor/rosell-dk/webp-convert" />
-      <path value="$PROJECT_DIR$/vendor/phpmailer/phpmailer" />
+      <path value="$PROJECT_DIR$/vendor/coffeecode/router" />
+      <path value="$PROJECT_DIR$/vendor/coffeecode/optimizer" />
+      <path value="$PROJECT_DIR$/vendor/matthiasmullie/minify" />
+      <path value="$PROJECT_DIR$/vendor/matthiasmullie/path-converter" />
       <path value="$PROJECT_DIR$/vendor/league/plates" />
       <path value="$PROJECT_DIR$/vendor/composer" />
-      <path value="$PROJECT_DIR$/vendor/matthiasmullie/path-converter" />
-      <path value="$PROJECT_DIR$/vendor/matthiasmullie/minify" />
-      <path value="$PROJECT_DIR$/vendor/coffeecode/optimizer" />
-      <path value="$PROJECT_DIR$/vendor/coffeecode/router" />
-      <path value="$PROJECT_DIR$/vendor/coffeecode/cropper" />
-      <path value="$PROJECT_DIR$/vendor/coffeecode/paginator" />
-      <path value="$PROJECT_DIR$/vendor/coffeecode/uploader" />
+      <path value="$PROJECT_DIR$/vendor/phpmailer/phpmailer" />
+      <path value="$PROJECT_DIR$/vendor/rosell-dk/webp-convert" />
       <path value="$PROJECT_DIR$/vendor/rosell-dk/image-mime-type-guesser" />
+      <path value="$PROJECT_DIR$/vendor/coffeecode/uploader" />
+      <path value="$PROJECT_DIR$/vendor/coffeecode/paginator" />
+      <path value="$PROJECT_DIR$/vendor/coffeecode/cropper" />
     </include_path>
   </component>
   <component name="ProjectId" id="1gB6GehJkHlJFYPBEtfz9mnXDvl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -66,6 +137,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -73,8 +145,21 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\bkhost\themes\sb-admin\widgets\registers" />
+      <recent name="C:\xampp\htdocs\bkhost\source\App\Admin" />
+      <recent name="C:\xampp\htdocs\bkhost\themes\sb-admin\widgets\register" />
+      <recent name="C:\xampp\htdocs\bkhost\themes\sb-admin\widgets\domains" />
+      <recent name="C:\xampp\htdocs\bkhost\themes\sb-admin\widgets\dominios" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\bkhost\source\Models" />
+      <recent name="C:\xampp\htdocs\bkhost\themes\sb-admin\widgets" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -94,7 +179,27 @@
       <workItem from="1598479016219" duration="625000" />
       <workItem from="1598542992352" duration="2596000" />
       <workItem from="1598545920364" duration="6075000" />
-      <workItem from="1598559938746" duration="10571000" />
+      <workItem from="1598559938746" duration="21697000" />
+      <workItem from="1598736568316" duration="7620000" />
+      <workItem from="1598906638741" duration="13768000" />
+      <workItem from="1599563273230" duration="5447000" />
+      <workItem from="1599574547137" duration="368000" />
+      <workItem from="1599575845953" duration="1273000" />
+      <workItem from="1599579153463" duration="7294000" />
+      <workItem from="1599607944039" duration="4044000" />
+      <workItem from="1599742628056" duration="12405000" />
+      <workItem from="1599832283664" duration="1925000" />
+      <workItem from="1599954411269" duration="16417000" />
+      <workItem from="1600214959225" duration="19794000" />
+      <workItem from="1600367271176" duration="23667000" />
+      <workItem from="1600451091285" duration="15202000" />
+      <workItem from="1600696402748" duration="23510000" />
+      <workItem from="1600805041141" duration="14730000" />
+      <workItem from="1600889236003" duration="1238000" />
+      <workItem from="1600959786346" duration="988000" />
+      <workItem from="1600981097475" duration="5977000" />
+      <workItem from="1601063991401" duration="840000" />
+      <workItem from="1601307423846" duration="33933000" />
     </task>
     <task id="LOCAL-00001" summary="Primeiro commmit&#10;front end quase pronto&#10;tabela users pronta">
       <created>1598572198042</created>
@@ -103,33 +208,66 @@
       <option name="project" value="LOCAL" />
       <updated>1598572198042</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Primeiro commmit&#10;front end quase pronto&#10;tabela users pronta">
+      <created>1598573395628</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1598573395628</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="false" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="false" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="false" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="false" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="false" />
+    <option name="LIMIT_HISTORY" value="false" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+      <path value="$PROJECT_DIR$/bkhost" />
+    </ignored-roots>
     <MESSAGE value="Primeiro commmit&#10;front end quase pronto&#10;tabela users pronta" />
     <option name="LAST_COMMIT_MESSAGE" value="Primeiro commmit&#10;front end quase pronto&#10;tabela users pronta" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="215" y="45" width="1016" height="683" key="#Deployment" timestamp="1598301189693">
+    <state x="215" y="45" width="1016" height="683" key="#Deployment" timestamp="1598645702131">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="215" y="45" width="1016" height="683" key="#Deployment/0.0.1366.768@0.0.1366.768" timestamp="1598301189693" />
-    <state x="282" y="165" key="#Notifications" timestamp="1598573013622">
+    <state x="215" y="45" width="1016" height="683" key="#Deployment/0.0.1366.768@0.0.1366.768" timestamp="1598645702131" />
+    <state x="470" y="38" key="#Menus_and_Toolbars" timestamp="1598573868963">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="282" y="165" key="#Notifications/0.0.1366.768@0.0.1366.768" timestamp="1598573013622" />
-    <state x="105" y="0" key="#Options" timestamp="1598314011051">
+    <state x="470" y="38" key="#Menus_and_Toolbars/0.0.1366.768@0.0.1366.768" timestamp="1598573868963" />
+    <state x="282" y="165" key="#Notifications" timestamp="1598635051028">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="105" y="0" key="#Options/0.0.1366.768@0.0.1366.768" timestamp="1598314011051" />
-    <state x="30" y="0" key="CommitChangelistDialog2" timestamp="1598572164124">
+    <state x="282" y="165" key="#Notifications/0.0.1366.768@0.0.1366.768" timestamp="1598635051012" />
+    <state x="105" y="0" key="#Options" timestamp="1598645952256">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="30" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1598572164124" />
+    <state x="105" y="0" key="#Options/0.0.1366.768@0.0.1366.768" timestamp="1598645952256" />
+    <state x="431" y="31" key="#com.intellij.ide.util.MemberChooser" timestamp="1600709028352">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="431" y="31" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1600709028352" />
+    <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1600715994556">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.768@0.0.1366.768" timestamp="1600715994556" />
+    <state x="347" y="80" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1600823537572">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="347" y="80" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.768@0.0.1366.768" timestamp="1600823537572" />
+    <state x="30" y="0" key="CommitChangelistDialog2" timestamp="1598665421581">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="30" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1598665421581" />
     <state x="338" y="281" key="ComposerInitDialogKey" timestamp="1598295534824">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -138,10 +276,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="129" y="57" key="DiffContextDialog/0.0.1366.768@0.0.1366.768" timestamp="1598572494128" />
-    <state x="401" y="63" key="FileChooserDialogImpl" timestamp="1598297898695">
+    <state x="401" y="63" key="FileChooserDialogImpl" timestamp="1601410196459">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="401" y="63" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1598297898695" />
+    <state x="401" y="63" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1601410196459" />
     <state width="1312" height="172" key="GridCell.Tab.0.bottom" timestamp="1598559667117">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -158,33 +296,96 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1312" height="172" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1598559667117" />
-    <state x="415" y="290" key="NewPhpFileDialog" timestamp="1598566293454">
+    <state x="322" y="53" key="NewPhpClassDialog" timestamp="1599004791575">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="415" y="290" key="NewPhpFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1598566293454" />
-    <state x="89" y="0" key="SettingsEditor" timestamp="1598573310537">
+    <state x="322" y="53" key="NewPhpClassDialog/0.0.1366.768@0.0.1366.768" timestamp="1599004791575" />
+    <state x="415" y="290" key="NewPhpFileDialog" timestamp="1599956217598">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="89" y="0" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1598573310537" />
-    <state x="175" y="52" key="Vcs.Push.Dialog.v2" timestamp="1598572971222">
+    <state x="415" y="290" key="NewPhpFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1599956217598" />
+    <state x="301" y="9" key="SettingsEditor" timestamp="1601319609510">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="175" y="52" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1598572971222" />
+    <state x="301" y="9" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1601319609510" />
+    <state x="175" y="52" key="Vcs.Push.Dialog.v2" timestamp="1600282341284">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="175" y="52" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1600282341284" />
     <state x="381" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598572872485">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="381" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.768@0.0.1366.768" timestamp="1598572872485" />
-    <state x="298" y="51" width="787" height="700" key="find.popup" timestamp="1598566663585">
+    <state x="298" y="50" width="787" height="700" key="find.popup" timestamp="1601401349846">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="298" y="51" width="787" height="700" key="find.popup/0.0.1366.768@0.0.1366.768" timestamp="1598566663585" />
-    <state x="481" y="53" width="369" height="666" key="ftp.server.browser" timestamp="1598294380840">
+    <state x="298" y="50" width="787" height="700" key="find.popup/0.0.1366.768@0.0.1366.768" timestamp="1601401349846" />
+    <state x="481" y="53" width="369" height="666" key="ftp.server.browser" timestamp="1598645607872">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="481" y="53" width="369" height="666" key="ftp.server.browser/0.0.1366.768@0.0.1366.768" timestamp="1598294380840" />
+    <state x="481" y="53" width="369" height="666" key="ftp.server.browser/0.0.1366.768@0.0.1366.768" timestamp="1598645607872" />
     <state x="362" y="264" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1598573363285">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="362" y="264" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1366.768@0.0.1366.768" timestamp="1598573363284" />
+    <state width="750" height="535" key="javadoc.popup" timestamp="1600024686565">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="750" height="535" key="javadoc.popup/0.0.1366.768@0.0.1366.768" timestamp="1600024686565" />
+    <state x="255" y="163" key="run.anything.popup" timestamp="1601406738883">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="255" y="163" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1601406738883" />
+    <state x="245" y="-1" width="874" height="174" key="search.everywhere.popup" timestamp="1601406874780">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="245" y="-1" width="874" height="174" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1601406874780" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php-line-method">
+          <url>file://$PROJECT_DIR$/source/App/Admin/Reg.php</url>
+          <line>27</line>
+          <properties>
+            <option name="className" value="\Source\App\Admin\Domain" />
+            <option name="methodName" value="home" />
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php-line-method">
+          <url>file://$PROJECT_DIR$/source/App/Admin/Registers.php</url>
+          <line>252</line>
+          <properties>
+            <option name="className" value="\Source\App\Admin\Registers" />
+            <option name="methodName" value="listarDominiosDeUmUsuario" />
+          </properties>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php-line-method">
+          <url>file://$PROJECT_DIR$/source/App/Admin/Reg.php</url>
+          <line>227</line>
+          <properties>
+            <option name="className" value="\Source\App\Admin\Reg" />
+            <option name="methodName" value="listarDominiosDeUmUsuario" />
+          </properties>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php-line-method">
+          <url>file://$PROJECT_DIR$/source/App/Admin/Registers.php</url>
+          <line>27</line>
+          <properties>
+            <option name="className" value="\Source\App\Admin\Registers" />
+            <option name="methodName" value="home" />
+          </properties>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/source/App/Admin/Reg.php</url>
+          <line>177</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
